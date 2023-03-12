@@ -23,7 +23,7 @@ public class Main {
         JSONObject popularPlaylists = deezer.get_popular_playlists();
         System.out.println(popularPlaylists);
         JSONObject getSuggestedInfo = deezer.SearchByQuery("Xander Ghost-OGRA");
-        System.out.println(getSuggestedTracks);
+        System.out.println(getSuggestedInfo);
 ```
 
 
