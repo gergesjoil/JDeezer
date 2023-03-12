@@ -16,9 +16,14 @@ public class Main {
         String arl = "Your Arl from cookies!";
         Deezer deezer = new Deezer(arl); //login
         String track_id = "1109737";
+        String download_dir = "C:\\Users\\User\\Music";
         deezer.get_track(track_id); //get track Id to download it
-        JSONObject artist = deezer.get_popular_playlists();
-        System.out.println(artist);
+        deezer.download_track(download_dir, "MP3_128", null);
+        //Search
+        JSONObject popularPlaylists = deezer.get_popular_playlists();
+        System.out.println(popularPlaylists);
+        JSONObject getSuggestedTracks = deezer.SearchByQuery("Xander Ghost-OGRA");
+        System.out.println(getSuggestedTracks);
 ```
 
 
