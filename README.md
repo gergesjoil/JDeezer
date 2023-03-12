@@ -22,7 +22,7 @@ public class Main {
         //Search
         JSONObject popularPlaylists = deezer.get_popular_playlists();
         System.out.println(popularPlaylists);
-        JSONObject getSuggestedInfo = deezer.SearchByQuery("Xander Ghost-OGRA");
+        JSONObject getSuggestedInfo = deezer.SearchByQuery("MONTERO - Call Me By Your Name"); //replace it with the name of the artist or song you want to search for.
         System.out.println(getSuggestedInfo);
 ```
 
