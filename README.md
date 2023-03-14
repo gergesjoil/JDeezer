@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         String arl = "Your Arl from cookies!";
         Deezer deezer = new Deezer(arl); //login
-        String track_id = "1109737";
+        String track_id = "781592622";
         String download_dir = "C:\\Users\\User\\Music";
         deezer.get_track(track_id); //get track Id to download it
         deezer.download_track(download_dir, "MP3_128", null);
